@@ -1,70 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f37f21">
+  <link rel="apple-touch-icon" href="/images/icon180.png">
+  <title>Compras App</title>
 
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
+  <link rel="stylesheet" href="styles.css">
+
+<link rel="manifest" href="manifest.json">
 
 </head>
 <body>
-    <div class="navbar-fixed">
-        <nav>
-          <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Logo</a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="sass.html">Sass</a></li>
-              <li><a href="badges.html">Components</a></li>
-            </ul>
-          </div>
-        </nav>
+  <!-- menu -->
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo Test</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">Javascript</a></li>
+          <li><a href="mobile.html">Mobile</a></li>
+        </ul>
       </div>
-      
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
-      
-    <div class="row">
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/sample-1.jpg">
-              <span class="card-title">Prurba de tarjeta</span>
-              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">airline_seat_legroom_normal
-            </i></a>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Prurba de tarjeta</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-              </div>
-            </div>
-        </div>
-    </div>
+    </nav>
+  </div>
 
-<script src="app.js"></script>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
+  </ul>
+ <!-- menu -->
 
+ <!-- Products -->
+
+ <div id="content"></div>
+
+<!-- 
+  <ul class="row">
+    <li class="col s12 l12">
+      <div class="row">
+        <div class="col s12 l1 product-icon">
+          <i class="material-icons circle">shopping_cart</i>
+        </div>
+        <div class="input-field col s12 l3">
+          <select class="browser-default">
+            <option value="" disabled selected>Elegir opcion</option>
+            <option value="pan">Pan (Kg)</option>
+            <option value="harina">Harina (Kg)</option>
+            <option value="leche">Leche (Unidad)</option>
+          </select>
+          <label>Producto</label>
+        </div>
+        <div class="input-field col s12 l3">
+          <input placeholder="Nota" id="nota" type="text" class="validate" required>
+          <label for="nota">Nota</label>
+        </div>
+        <div class="input-field col s12 l3">
+          <input placeholder="Cantidad" id="cantidad" type="number" class="validate" required>
+          <label for="cantidad">Cantidad</label>
+        </div>
+        <div class="col s5 offset-s7 m3 offset-m9 l2">
+          <div class="col s6 l6"> <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">remove</i></a></div>
+          <div class="col s6 l6"> <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a></div>
+        </div>
+        
+      </div>
+    </li>
+
+
+    <li class="col s12 l12">
+      <div class="row">
+        <div class="col s12 l1 product-icon">
+          <i class="material-icons circle">shopping_cart</i>
+        </div>
+        <div class="input-field col s12 l3">
+          <select class="icons">
+            <option value="" disabled selected>Elegir opcion</option>
+            <option value="pan" data-icon="https://www.theflavorbender.com/wp-content/uploads/2019/02/Homemade-Bread-Featured-1.jpg">Pan (Kg)</option>
+            <option value="harina" data-icon="https://conceptodefinicion.de/wp-content/uploads/2020/05/harina.jpg">Harina (Kg)</option>
+            <option value="leche" data-icon="https://dam.cocinafacil.com.mx/wp-content/uploads/2019/06/Leche-descremada-3.jpg">Leche (Unidad)</option>
+          </select>
+          <label>Producto</label>
+        </div>
+        <div class="input-field col s12 l3">
+          <input placeholder="Nota" id="nota" type="text" class="validate" required>
+          <label for="nota">Nota</label>
+        </div>
+        <div class="input-field col s12 l3">
+          <input placeholder="Cantidad" id="cantidad" type="number" class="validate" required>
+          <label for="cantidad">Cantidad</label>
+        </div>
+        <div class="col s5 offset-s7 m3 offset-m9 l2">
+          <div class="col s6"> <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">remove</i></a></div>
+          <div class="col s6"> <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a></div>
+        </div>
+        
+      </div>
+    </li>
+  </ul> -->
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="index.js"></script>
 </body>
 </html>

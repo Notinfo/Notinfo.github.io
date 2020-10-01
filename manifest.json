@@ -1,0 +1,41 @@
+{
+    "name": "Lista de compras PWA",
+    "short_name": "Lista de ccompras",
+    "theme_color": "#f37f21",
+    "background_color": "#fb0000",
+    "display": "standalone",
+    "scope": "/",
+    "start_url":"/",
+    "icons": [
+        {
+            "src": "./images/icon512.png",
+            "sizes": "512x512", 
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "./images/icon144.png",
+            "sizes": "144x144", 
+            "type": "image/png"
+        },
+        {
+            "src": "./images/icon96.png",
+            "sizes": "96x96", 
+            "type": "image/png"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Shortcut",
+            "url": "/#test",
+            "description": "shortcut test",
+            "icons": [
+                {
+                    "src": "./images/icon96.png",
+                    "sizes": "96x96", 
+                    "type": "image/png"
+                }
+            ]
+        }
+    ]
+}
