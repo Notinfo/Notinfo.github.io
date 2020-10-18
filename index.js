@@ -219,6 +219,8 @@ const ProductsComponent = ((API) => {
   
     return wrapperNode;
   }
+
+  
   
   const willUnmountProductsComponent = () => {
     stopAutoSave();
