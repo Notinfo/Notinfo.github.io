@@ -309,7 +309,7 @@ const Router = (() => {
       if(currentComponent.load) {
         await currentComponent.load();
       }
-
+ 
       const componentRender = await currentComponent.render();
     
       const content = document.getElementById('content');
